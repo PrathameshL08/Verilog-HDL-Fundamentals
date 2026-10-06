@@ -7,7 +7,7 @@ Testbenches are included for the gates that were simulated and verified.
 - AND  :  `Y = A & B`  	
 - OR	  :  `Y = A | B`	 
 - NOT  :	 `Y = ~A`	      
-- NAND :  `Y = ~(A & B)`
+- NAND :  `Y = ~(A & B)` 
 - NOR	 :  `Y = ~(A | B)`	
 - XOR	 :  `Y = A ^ B	`
 - XNOR :  `Y = ~(A ^ B)`
@@ -19,7 +19,7 @@ Testbenches are included for the gates that were simulated and verified.
 -	Boolean expressions
 -	Verilog HDL module structure
 -	Dataflow Modeling
--	Continuous assignment using assign
+-	Continuous assignment using assign statement 
 -	Verilog operators
 -	Module instantiation
 -	Testbench development 
