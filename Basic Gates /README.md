@@ -4,13 +4,13 @@ All designs are written using Dataflow Modeling with continuous assignment state
 Testbenches are included for the gates that were simulated and verified.
 
 ## Gates Implemented 
-AND  :  Y = A & B  	
-OR	  :  Y = A | B	 
-NOT  :	Y = ~A	      
-NAND :  Y = ~(A & B)
-NOR	 :  Y = ~(A | B)	
-XOR	 :  Y = A ^ B	
-XNOR :  Y = ~(A ^ B)
+- AND  :  `Y = A & B`  	
+- OR	  :  Y = A | B	 
+- NOT  :	Y = ~A	      
+- NAND :  Y = ~(A & B)
+- NOR	 :  Y = ~(A | B)	
+- XOR	 :  Y = A ^ B	
+- XNOR :  Y = ~(A ^ B)
 
 
  
