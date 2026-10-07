@@ -2,7 +2,7 @@
 module mux_8x1 (
   input [7:0]i,
   input [2:0]sel,
-  output y
+  output reg y
 );
   always@(*) begin 
     case (sel) 
