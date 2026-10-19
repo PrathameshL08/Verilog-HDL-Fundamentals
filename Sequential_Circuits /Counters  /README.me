@@ -1,0 +1,52 @@
+# 3-Bit Up/Down Counter
+
+## Overview
+This project implements a **3-bit synchronous Up/Down Counter** using Verilog HDL. The counter increments or decrements its value based on a mode control input and uses an active-high synchronous reset to initialize the output to zero.
+
+## Features
+- 3-bit counter with output values from 0 to 7.
+- Counts upward when `m = 0`.
+- Counts downward when `m = 1`.
+- Synchronous active-high reset (`rst`).
+- Positive-edge-triggered clock operation.
+- Designed and simulated using Xilinx Vivado.
+
+## Inputs and Outputs
+
+| Signal | Direction | Description |
+|---|---|---|
+| `clk` | Input | Clock signal |
+| `rst` | Input | Active-high synchronous reset |
+| `m` | Input | Mode control: `0` for up-counting, `1` for down-counting |
+| `q[2:0]` | Output | 3-bit counter value |
+
+## Working Principle
+The counter updates its output on every positive edge of the clock.
+
+- **Reset (`rst = 1`):** The counter output becomes `000`.
+- **Up-count (`rst = 0`, `m = 0`):** The counter increments by 1.
+- **Down-count (`rst = 0`, `m = 1`):** The counter decrements by 1.
+
+Since the counter is 3 bits wide, it counts from 0 to 7. When counting upward, it wraps from 7 to 0. When counting downward, it wraps from 0 to 7.
+
+## Counting Sequences
+
+**Up-counting:**
+```text
+000 → 001 → 010 → 011 → 100 → 101 → 110 → 111 → 000
+```
+
+**Down-counting:**
+```text
+000 → 111 → 110 → 101 → 100 → 011 → 010 → 001 → 000
+```
+
+## Project Structure
+```text
+Up_Down_Counter/
+├── up_down_counter.v
+├── up_down_counter_tb.v
+├── waveform.png
+└── README.md
+```
+ 
