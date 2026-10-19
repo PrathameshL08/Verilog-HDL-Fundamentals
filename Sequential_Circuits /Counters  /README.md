@@ -1,7 +1,7 @@
 # 3-Bit Up/Down Counter
 
 ## Overview
-This project implements a **3-bit synchronous Up/Down Counter** using Verilog HDL. The counter increments or decrements its value based on a mode control input and uses an active-high synchronous reset to initialize the output to zero.
+This project implements a **3-bit synchronous Up/Down Counter** using Verilog HDL. The counter increments or decrements its value based on a mode control input and uses an active-high synchronous reset to initialize the output to zero. 
 
 ## Features
 - 3-bit counter with output values from 0 to 7.
